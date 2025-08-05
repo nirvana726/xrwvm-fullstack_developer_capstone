@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #00cfd3 !important;
+    }
+    .navbar-brand {
+      color: black !important;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    .nav-link {
+      color: black !important;
+      font-size: 1.1rem;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .content-box {
+      background: white;
+      border-radius: 15px;
+      padding: 20px 30px;
+      max-width: 1000px;
+      margin: 30px auto;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .top-banner img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      object-fit: cover;
+      max-height: 300px;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+    .left-image {
+      flex: 1;
+      text-align: center;
+    }
+    .left-image img {
+      max-width: 70%;
+      height: auto;
+    }
+    .divider {
+      width: 2px;
+      background-color: #ccc;
+      height: 250px;
+      margin: 0 20px;
+    }
+    .contact-info {
+      flex: 2;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #005f66;
+    }
+    .contact-info h1 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 28px;
+      color: #007B8A;
+    }
+    .contact-info h2 {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #004d52;
+    }
+    .contact-info p, .contact-info a {
+      margin-bottom: 10px;
+      color: #005f66;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+      }
+      .divider {
+        display: none;
+      }
+      .left-image img {
+        max-width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-4">
+          <!-- Left: Brand -->
+          <a class="navbar-brand m-0" href="#">Dealerships</a>
+      
+          <!-- Center: Nav links -->
+          <div class="d-none d-lg-flex gap-4">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link active" href="/contact">Contact Us</a>
+          </div>
+      
+          <!-- Right: Auth links -->
+          <div class="d-none d-lg-flex gap-3">
+            <a class="nav-link" href="/login" style="text-decoration: underline;">Login</a>
+            <a class="nav-link" href="/register" style="text-decoration: underline;">Register</a>
+          </div>
+        </div>
+      </nav>
+      
+
+  <div class="content-box">
+    <!-- Top Banner Image -->
+    <div class="top-banner">
+      <img src="/static/contactus.jpg" alt="Dealership Cars Banner" />
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <!-- Left Image -->
+      <div class="left-image">
+        <img src="/static/contactus.png" alt="Customer Support Icon" />
+      </div>
+
+      <!-- Divider -->
+      <div class="divider"></div>
+
+      <!-- Right Contact Info -->
+      <div class="contact-info">
+        <h1>We're Here to Help!</h1>
+        <p>Questions? Suggestions? We’d love to hear from you. Reach out anytime — your satisfaction drives us forward.</p>
+
+        <h2>Customer Support</h2>
+        <p>Email us at <a href="mailto:help@bestcars.com">help@bestcars.com</a> or call <strong>1-800-DRIVE-NOW</strong> for immediate assistance.</p>
+
+        <h2>Sales & Partnerships</h2>
+        <p>Interested in teaming up or learning about our latest offers? Contact our sales champions at <a href="mailto:sales@bestcars.com">sales@bestcars.com</a>.</p>
+
+        <h2>Headquarters</h2>
+        <p>1234 Auto Lane<br>Motor City, USA 56789<br>Phone: (312) 611-1111</p>
+
+        <h2>Join Our Dealer Network</h2>
+        <p>Ready to accelerate your business? <a href="https://growwithbestcars.com" target="_blank" rel="noopener noreferrer">Become a Bestcars Dealer</a> and drive success together.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
